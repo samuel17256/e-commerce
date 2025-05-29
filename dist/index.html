@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-commerse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-500 text-gray-100">
+  <div class="container">
+
+    <header class="flex flex-col sm:flex-row items-center justify-evenly bg-black gap-4 fixed w-full py-3 top-0 px-6">
+      <h1 class="text-2xl sm:text-3xl font-bold"> MyShopping Cart 🛍️</h1>
+      
+      <nav class="flex gap-6 font-medium text-lg text-gray-100">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Shop</a>
+        <a href="#" class="hover:underline">Contact</a>
+        <a href="#" class="hover:underline">About</a>
+      </nav>
+    
+      <div class="shopping relative cursor-pointer">
+        <img src="img/cart.png" alt="cart" class="w-10 h-10 bg-white rounded px-2 py-1"/>
+        <span class="quantity absolute -top-2 -right-2 bg-red-500 text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center">0</span>
+      </div>
+    </header>
+    
+
+    <h2 class="text-slate-100 mt-20 text-center text-3xl font-semibold">My Products</h2>
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mx-4 gap-6 mt-20 text-black" id="list">
+
+    </div>
+  </div>
+
+  <div class="cart fixed top-0 right-0 w-full sm:w-96 h-full bg-white shadow-lg border-l border-gray-200 p-6 transform translate-x-full transition-transform duration-300 ease-in-out z-50 overflow-y-auto">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-700">My Carts</h2>
+    <ul class="listCart space-y-4">
+
+    </ul>
+    <div class="checkOut mt-6 space-y-4 flex flex-row gap-4">
+      <span class="total text-xl font-bold text-blue-600 mt-6">₦0</span>
+      <button onclick="clearCart()" class="bg-blue-500 text-white  py-2 rounded-md px-4">
+        Clear
+      </button>
+      <div class="closeShopping  bg-red-500 text-white py-2 px-4 rounded-md text-center cursor-pointer hover">
+        Close
+      </div>
+    </div>
+    
+  </div>
+
+  <footer class="bg-gray-900 text-white py-6 mt-10 text-center">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      
+      <div class="text-lg font-bold">
+        MyShopping Cart 🛍️
+      </div>
+      
+      <nav class="flex gap-6 text-sm">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Shop</a>
+        <a href="#" class="hover:underline">Contact</a>
+        <a href="#" class="hover:underline">About</a>
+      </nav>
+      
+      <div class="flex gap-4 text-sm">
+        <a href="" class="hover:underline">My github link</a>
+      </div>
+  
+    </div>
+    <div class="mt-4 text-xs text-gray-400">
+      &copy; 2025 MyShop. All rights reserved.
+    </div>
+  </footer>
+  
+  <script src="cart.js"></script>
+</body>
+</html>
